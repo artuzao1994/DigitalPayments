@@ -26,25 +26,23 @@ namespace DigitalPayments.Presentation.Controllers
         [HttpPost]
         public IActionResult Create(CardViewModel cardView, int customerId)
         {
-            //Customer customer = _customerService.GetCustomer(customerId);
+            Customer customer = _customerService.GetCustomer(customerId);
 
-            //if (customer == null)
-            //{  
-            //    return NotFound();
-            //}
+            if (customer == null)
+            {  
+                return NotFound();
+            }
 
-            //Card card = _cardService.ProcessCard(new Card() { Number = cardView.Number, CVV = cardView.CVV});
+            Card card = _cardService.ProcessCard(new Card() { Number = cardView.Number, CVV = cardView.CVV});
 
-            //if (card == null)
-            //{  
-            //    return BadRequest();
-            //}
+            if (card == null)
+            {  
+                return BadRequest();
+            }
 
-            //_customerService.UpdateCustomer(customer, card);
+            _customerService.UpdateCustomer(customer, card);
 
-  
-
-            return Ok("card.Token");
+            return Ok(card.Token);
         }
     }
 }
