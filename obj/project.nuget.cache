@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XPQQ+cruu6gpTI7fwf1aZXJs+XtMpUisEJfP472ne0jBzvmHkMxtrQb0YenEhzjQjpGqgV3NDfR9OIkNxlxrmA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\arthu\\source\\repos\\DigitalPayments\\DigitalPayments.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arthu\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\arthu\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\arthu\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
